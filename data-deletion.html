@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Instructions - TenantTale</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --muted: #555555;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --surface: #f9fafb;
+            --green: #059669;
+            --red: #dc2626;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111827;
+                --text: #f3f4f6;
+                --muted: #9ca3af;
+                --accent: #60a5fa;
+                --border: #374151;
+                --surface: #1f2937;
+                --green: #34d399;
+                --red: #f87171;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        h2 {
+            font-size: 1.35rem;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid var(--border);
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p, li {
+            margin-bottom: 0.75rem;
+        }
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .step {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+        .step-number {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+        }
+        .step-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        .step p {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.92rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.6rem 0.75rem;
+            border: 1px solid var(--border);
+        }
+        th {
+            background: var(--surface);
+            font-weight: 600;
+        }
+        .deleted {
+            color: var(--red);
+            font-weight: 500;
+        }
+        .retained {
+            color: var(--muted);
+        }
+        .note {
+            background: var(--surface);
+            border-left: 3px solid var(--accent);
+            padding: 0.75rem 1rem;
+            margin: 1rem 0;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.92rem;
+        }
+        .contact-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+        .grace-period {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        .grace-period .days {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .grace-period .label {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Data Deletion Instructions</h1>
+    <p class="subtitle">How to delete your TenantTale account and personal data</p>
+
+    <p>You have the right to request deletion of your account and all associated personal data at any time. TenantTale provides two ways to do this: through the App or by email.</p>
+
+    <h2>Option 1: Delete Through the App (Recommended)</h2>
+
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Open Settings</span>
+        <p>Tap your profile icon, then tap <strong>Settings</strong>.</p>
+    </div>
+
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Go to Privacy &amp; Data</span>
+        <p>Scroll down and tap <strong>Privacy &amp; Data</strong>.</p>
+    </div>
+
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Tap &ldquo;Delete My Account&rdquo;</span>
+        <p>At the bottom of the screen, tap the <strong>Delete My Account</strong> button.</p>
+    </div>
+
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Confirm deletion</span>
+        <p>Review the summary of data that will be deleted, optionally provide a reason, then confirm by toggling the acknowledgement and tapping <strong>Delete My Account</strong>.</p>
+    </div>
+
+    <h2>Option 2: Delete by Email</h2>
+
+    <p>If you cannot access the App, send an email to <a href="mailto:privacy@tenanttale.com">privacy@tenanttale.com</a> with the subject line <strong>&ldquo;Account Deletion Request&rdquo;</strong> and include the email address associated with your account. We will process your request within 5 business days and confirm via email.</p>
+
+    <h2>What Happens After You Request Deletion</h2>
+
+    <div class="grace-period">
+        <div class="days">30</div>
+        <div class="label">day grace period before permanent deletion</div>
+    </div>
+
+    <p>When you request account deletion, a <strong>30-day grace period</strong> begins. During this time:</p>
+    <ul>
+        <li>Your account is deactivated but your data is preserved.</li>
+        <li>You can <strong>cancel the deletion</strong> at any time by signing back in and going to Settings &gt; Privacy &amp; Data.</li>
+        <li>After 30 days, your data is <strong>permanently and irreversibly deleted</strong>.</li>
+    </ul>
+
+    <h2>Data That Is Deleted</h2>
+
+    <table>
+        <tr><th>Category</th><th>What Is Deleted</th></tr>
+        <tr><td class="deleted">Account Data</td><td>Email, display name, authentication credentials</td></tr>
+        <tr><td class="deleted">Profile Information</td><td>Tenant and landlord profiles, employment details, financial information</td></tr>
+        <tr><td class="deleted">Properties</td><td>Property records, listings, verification documents, stored files, connection codes</td></tr>
+        <tr><td class="deleted">Connections</td><td>All tenant-landlord connection records and lease information</td></tr>
+        <tr><td class="deleted">Score Data</td><td>Current score, score history, and score breakdowns</td></tr>
+        <tr><td class="deleted">Activity History</td><td>Monthly reports, feedback, maintenance tickets, disputes, rental applications</td></tr>
+    </table>
+
+    <h2>Data That May Be Retained</h2>
+
+    <p>Certain data may be retained after deletion as required by law:</p>
+
+    <table>
+        <tr><th>Data</th><th>Retention Period</th><th>Reason</th></tr>
+        <tr><td class="retained">Score history</td><td>Up to 7 years from creation</td><td>FCRA regulatory requirement</td></tr>
+        <tr><td class="retained">Screening results &amp; consents</td><td>Up to 7 years from creation</td><td>FCRA regulatory requirement</td></tr>
+        <tr><td class="retained">Adverse action notices</td><td>Up to 5 years from creation</td><td>FCRA regulatory requirement</td></tr>
+        <tr><td class="retained">Consent records</td><td>Up to 7 years from creation</td><td>GDPR / legal compliance</td></tr>
+        <tr><td class="retained">Audit logs</td><td>Up to 7 years from creation</td><td>Legal compliance</td></tr>
+        <tr><td class="retained">Anonymized feedback</td><td>Indefinite</td><td>Feedback you submitted about others is anonymized, not deleted, to preserve scoring integrity</td></tr>
+    </table>
+
+    <div class="note">
+        All legally retained data is automatically purged after its retention period expires. This is handled by our automated retention system.
+    </div>
+
+    <h2>Export Your Data Before Deleting</h2>
+
+    <p>Before deleting your account, you can download a complete copy of your personal data:</p>
+    <ol>
+        <li>Go to <strong>Settings &gt; Privacy &amp; Data &gt; Export My Data</strong>.</li>
+        <li>Choose <strong>JSON</strong> (machine-readable) or <strong>PDF</strong> (human-readable) format.</li>
+        <li>Save the exported file to your device.</li>
+    </ol>
+    <p>We recommend exporting your data before requesting deletion, as it cannot be recovered after the 30-day grace period.</p>
+
+    <h2>Third-Party Data</h2>
+
+    <p>Deleting your TenantTale account removes your data from our systems. Data held by third-party authentication providers (Apple, Google, Facebook, Microsoft) is governed by their respective privacy policies. To revoke TenantTale&rsquo;s access:</p>
+    <ul>
+        <li><strong>Apple:</strong> Settings &gt; [Your Name] &gt; Sign-In &amp; Security &gt; Sign in with Apple</li>
+        <li><strong>Google:</strong> <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+        <li><strong>Facebook:</strong> Settings &gt; Apps and Websites</li>
+        <li><strong>Microsoft:</strong> <a href="https://account.microsoft.com/privacy">account.microsoft.com/privacy</a></li>
+    </ul>
+
+    <h2>Contact Us</h2>
+
+    <p>If you have questions about data deletion or need assistance, contact us:</p>
+
+    <div class="contact-box">
+        <strong>TenantTale</strong><br>
+        Skill Tree Solutions, Inc.<br>
+        Email: <a href="mailto:privacy@tenanttale.com">privacy@tenanttale.com</a>
+    </div>
+
+    <p>We will respond to all data-related inquiries within 5 business days.</p>
+
+    <footer>
+        <p>&copy; 2026 Skill Tree Solutions, Inc. All rights reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> &middot;
+            <a href="terms-of-service.html">Terms of Service</a>
+        </p>
+    </footer>
+
+</div>
+</body>
+</html>
