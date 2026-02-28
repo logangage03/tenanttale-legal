@@ -113,7 +113,7 @@
 <div class="container">
 
     <h1>TenantTale Privacy Policy</h1>
-    <p class="subtitle">Effective Date: February 9, 2026 &middot; Last Updated: February 9, 2026</p>
+    <p class="subtitle">Effective Date: February 9, 2026 &middot; Last Updated: February 27, 2026</p>
 
     <h2>Introduction</h2>
     <p>TenantTale (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;), operated by Skill Tree Solutions, Inc., is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (&ldquo;App&rdquo;).</p>
@@ -144,7 +144,7 @@
     <ul>
         <li><strong>Authentication Providers:</strong> When you sign in with Apple, Google, Facebook, or Microsoft, we receive your name and email from those services.</li>
         <li><strong>Property Verification Services:</strong> We may receive property ownership confirmation from third-party data providers.</li>
-        <li><strong>Tenant Screening Providers:</strong> If a landlord orders a background check with your consent, we receive screening results from TransUnion SmartMove.</li>
+        <li><strong>Tenant Screening Provider (CRS Credit API):</strong> If a landlord orders a background check with your consent, or if you purchase a self-check, we receive screening results from CRS Credit API, our third-party consumer reporting agency. This may include credit reports (Equifax Vantage 4), criminal history, and eviction records, depending on the check type purchased.</li>
     </ul>
 
     <h2>How We Use Your Information</h2>
@@ -244,7 +244,19 @@
     <p>Data retention is enforced automatically. After account deletion, we may retain anonymized data for analytics purposes.</p>
 
     <h2>Tenant Screening (Background Checks)</h2>
-    <p>Landlords may request FCRA-compliant background checks on applicants through the App via TransUnion SmartMove. Screening requires the tenant&rsquo;s explicit written consent before any check is initiated. Results may include credit, criminal, and eviction history. If a landlord takes adverse action (e.g., denial) based on screening results, FCRA-required adverse action notices are generated through the App, including consumer rights information and CRA contact details.</p>
+    <p>TenantTale facilitates FCRA-compliant background checks through CRS Credit API, our third-party consumer reporting agency. Checks are purchased individually (&agrave; la carte) and include three types:</p>
+    <table>
+        <tr><th>Check Type</th><th>Data Source</th><th>Information Returned</th></tr>
+        <tr><td>Credit Report</td><td>Equifax (Vantage 4)</td><td>Credit history, accounts, inquiries, score</td></tr>
+        <tr><td>Criminal Report</td><td>National criminal databases</td><td>Criminal history, filtered by applicable jurisdiction rules</td></tr>
+        <tr><td>Eviction Report</td><td>National eviction databases</td><td>Eviction filings and judgments</td></tr>
+    </table>
+
+    <h3>Landlord-Initiated Screening</h3>
+    <p>Landlords may request background checks on applicants through the App. Screening requires the tenant&rsquo;s explicit written consent and FCRA permissible purpose certification before any check is initiated. If a landlord takes adverse action (e.g., denial) based on screening results, FCRA-required adverse action notices are generated through the App, including consumer rights information and CRA contact details.</p>
+
+    <h3>Tenant Self-Checks (Pre-Screening)</h3>
+    <p>Tenants may purchase individual screening checks on themselves to share with prospective landlords as part of rental applications. Self-check results are valid for 90 days. Landlords who receive self-check results see only a summary confirmation of completed check types&mdash;not the full report details.</p>
 
     <h2>Children&rsquo;s Privacy</h2>
     <p>TenantTale is not intended for users under 18 years of age. We do not knowingly collect information from children. If we learn we have collected information from a child, we will delete it promptly.</p>
